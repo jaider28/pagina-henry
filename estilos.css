@@ -1,0 +1,260 @@
+:root{
+    --rojo: #E50914;
+    --fondo: #141414;
+}
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--fondo);
+    font-family: 'Open Sans', sans-serif;
+
+}
+.contenedor{
+    width: 90%;
+    margin:auto;
+
+}
+
+header{
+    padding: 30px 0;
+}
+
+header .contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logotipo{
+    font-family: 'Bebas Neue', cursive;
+    font-weight: normal;
+    color: var(--rojo);
+    font-size: 40px;
+}
+
+header nav a {
+    color: #AAA;
+    text-decoration: none;
+    text-transform: 2px;
+    margin-right: 20px;
+}
+
+header nav a:hover,
+header nav a.activo {
+      color: #FFF;
+}
+
+.pelicula-principal {
+    font-size: 16px;
+    min-height: 40.62em;
+    color: #FFF;
+    background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0, 0, 0, .50) 100%), url(./img/imageFondo.jpg);
+    background-position: center center;
+    background-size: cover;
+    margin-bottom: 3.12em;
+    display: flex;
+    align-items: end;
+}
+.peliculas-recientes{
+    font-size: 16px;
+    min-height: 40.62em;
+    color: #FFF;
+    background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0, 0, 0, .50) 100%), url(./img/image20.jpg);
+    background-position: center center;
+    background-size: cover;
+    margin-bottom: 3.12em;
+    display: flex;
+    align-items: end;
+    
+}
+.titulo2{
+    font-weight: 600;
+    font-size: 3.12em;
+    margin-bottom: 0.4em;
+}
+.descripcion2{
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 1.75em;
+    max-width: 50%;
+    margin-bottom: 1.25em;
+}
+.boton1
+{
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 0.31em;
+    padding: 0.93em 1.78em;
+    color: #FFF;
+    margin-right: 1.25em;
+    cursor: pointer;
+    transition: .3s ease all;
+    font-size: 1.12;
+}
+.peliculas-recientes .boton1:hover{
+    background: #fff;
+    color: #000;
+}
+.peliculas-recientes .boton1 i{
+    margin-right: 1.25em;
+}
+.pelicula-principal .contenedor{
+    margin: 0 auto;
+    margin-bottom: 6.25em;
+}
+
+.pelicula-principal .titulo{
+    font-weight: 600;
+    font-size: 3.12em;
+    margin-bottom: 0.4em;
+}
+
+
+
+.pelicula-principal .descripcion{
+   font-weight: normal;
+    font-size: 1em;
+    line-height: 1.75em;
+    max-width: 50%;
+    margin-bottom: 1.25em;
+} 
+
+.pelicula-principal .boton{
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 0.31em;
+    padding: 0.93em 1.78em;
+    color: #FFF;
+    margin-right: 1.25em;
+    cursor: pointer;
+    transition: .3s ease all;
+    font-size: 1.12;
+}
+
+.pelicula-principal .boton:hover{
+    background: #fff;
+    color: #000;
+}
+
+.pelicula-principal .boton i{
+     margin-right: 1.25em;
+}
+
+.container{
+    width: 100%;
+    height: 460px;
+    display: flex;
+    max-width: 1800px;
+}
+
+.card{
+    width: 100%;
+    
+    margin: 20px;
+    border-radius:  6px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 5px 3px 10px rbga(0,0,0,0.2);
+    cursor: default;
+    transition: all 400ms ease;
+}
+.card:hover{
+   box-shadow: 5px 5px 20px rgba(0, 0, 0,0.4);
+   transform: translateY(-3%);
+}
+.card img{
+     width: 100%;
+     height: 210px;
+}
+.card.contenido{
+    padding: 15px;
+    text-align: center;
+}
+.card.contenido p{
+    line-height: 1.5;
+    color: #6a6a6a;
+}
+.card.contenido h3{
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.programas h1{
+    color: #dd7878;
+    text-align: center;
+}
+
+.these{
+    background-color: #8b4737;
+    border-radius: 20px;
+}
+.contenedor-galeria{
+    width: 85%;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: #5e3135;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.contenedor-galeria img{
+    width: 100%;
+
+}
+.contenedorM img{
+     width: 16.6%;
+     transition: .3s;
+
+}
+.contenedorM img:hover{
+    transform: scale(1.1);
+    transition: .3s;
+}
+
+.add{
+    border: 6px solid rgb(238, 52, 52);
+    border-radius: 5px;
+}
+
+.mejores-play{
+      margin: 0%;
+     color: #fff;
+     margin-bottom: 3.12em;
+}
+.imagen{
+   float: left;
+   margin-bottom: 3.12em;
+   width: 20%;
+   border: 9px solid;
+   border-radius: 10px;
+   color:#000;
+}
+.titulo{
+    color:#fff;
+    right: 10%;
+    top: 20px;
+    
+}
+
+.negro{
+    float: left;
+    width: 80%;
+    color: #fff;
+    margin-bottom: 3.12em;
+    font-family:'Open Sans', sans-serif; 
+    
+}
+
+.clear{
+    clear:both;
+}
+
+footer{
+    color: #fff;
+    float: left;
+    background-position: center center;
+}
